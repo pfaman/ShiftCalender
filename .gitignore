@@ -39,3 +39,29 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# build outputs (rebuild them, never commit them)
+*.apk
+*.aab
+*.idsig
+modules/*/android/build/
+modules/*/android/.gradle/
+local.properties
+*.log
+
+# signing: keys and passwords must never be committed
+*.keystore
+*.jks
+keystore.properties
+key.properties
+Key_Store/
+
+# Firebase config (per developer / per environment; see app.config.js)
+google-services.json
+GoogleService-Info.plist
+
+# editors and local tooling
+.idea/
+.vscode/
+.claude/settings.local.json
+
